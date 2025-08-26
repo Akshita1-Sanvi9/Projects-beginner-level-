@@ -124,7 +124,7 @@
     }
 function showResult(userMove,computerMove,result){
   localStorage.setItem('Score',JSON.stringify(score));
-  document.querySelector('#user-move').innerText=userMove? `You have chosen${userMove}`:'';
+  document.querySelector('#user-move').innerText=userMove? `You have chosen ${userMove}`:'';
   document.querySelector('#computer-move').innerText=computerMove ?`Computer choice is ${computerMove}` : '';
   document.querySelector('#result').innerText= result || '';
   document.querySelector('#score').innerText=score.displayScore();
@@ -135,4 +135,5 @@ function showResult(userMove,computerMove,result){
   
   </script>
 </body>
+
 </html>
